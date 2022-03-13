@@ -1,0 +1,74 @@
+
+.item,
+.disabledItem {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.disabledItem {
+    cursor: auto;
+}
+
+.item:not(:nth-child(6n)),
+.disabledItem:not(:nth-child(6n)) {
+    margin-right: 20px;
+}
+
+
+.card,
+.flippedCard {
+    position: relative;
+    height: 90px;
+    width: 90px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(250, 225, 225);
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+}
+
+.flippedCard .image {
+
+    transform: rotateY(0);
+    transition-delay: 0.2s;
+}
+
+.noImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: white;
+}
+
+.backOfCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(154, 154, 240), rgb(248, 196, 231));
+
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flippedCard .backOfCard {
+    transform: rotateY(90deg);
+    transition-delay: 0;
+}

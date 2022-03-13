@@ -1,0 +1,25 @@
+.results {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    list-style: none;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.player,
+.playerYou {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    text-align: left;
+}
+
+.playerYou {
+    border: 2px solid goldenrod;
+}

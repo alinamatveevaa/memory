@@ -1,0 +1,25 @@
+
+.button {
+    width: 180px;
+    height: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: rgb(151, 122, 246);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: rgb(151, 122, 246);
+    border: 1px solid rgb(151, 122, 246);
+    background-color: transparent;
+}
+
+.button:disabled {
+    color: white;
+    border: none;
+    background-color: rgba(151, 122, 246, 0.4);
+    cursor: auto;
+}
